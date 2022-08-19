@@ -1,0 +1,44 @@
+﻿@model Ordere
+<table class="table">
+                <tr>
+                        <th>Adress</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>status</th>
+                        
+
+                </tr>
+                
+                   
+                        <tr>
+                                <td>@Model.Adress</td>
+                                <td>@Model.Date</td>
+                                <td>@Model.CustomerName</td>
+                                <td>@Model.CustomerEmail</td>
+                                <td>@Model.Phone</td>
+                                <td>
+                                    @Model.Status
+                                </td>
+                               <td>@Model.Id</td>
+                        </tr>
+                
+               
+               
+        </table>
+        <div>
+            <h1>Order status :</h1>
+            <form asp-controller="solddetails" asp-action="status_order">
+               
+                <input type="hidden" asp-for="Adress" />
+                <input type="hidden" asp-for="CustomerEmail" />
+                <input type="hidden" asp-for="CustomerName" />
+                <input type="hidden" asp-for="Phone" />
+                <select asp-for="Status" class="form-select" aria-label="Default select example">
+                    <option value="Processing">Processing</option>
+                    <option value="done">DONE</option>
+                </select>
+                <input type="submit" value="submit"  class="btn btn-primary" />
+            </form>
+        </div>

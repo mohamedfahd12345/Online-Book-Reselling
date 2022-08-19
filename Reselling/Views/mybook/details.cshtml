@@ -35,7 +35,16 @@
 								Author:@Model.Author
 							</h3>
 							<h3>
-								Book Status : @Model.Status
+										@if (Model.Status == "sold")
+										{
+											<a href="/solddetails/index/@Model.Id">book status : @Model.Status</a>
+										}
+										else
+										{
+											<h3>book status : @Model.Status </h3>	
+										}
+
+
 							</h3>	
 							
 						</div>

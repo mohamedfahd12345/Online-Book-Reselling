@@ -75,7 +75,7 @@ namespace Reselling.Controllers
             db.Orderes.Add(new_order);
             db.SaveChanges();
             //////---------------OrderDetail--------------------//////////////
-            var target_order = db.Orderes.Where(x => x.UserId == userId).FirstOrDefault();
+            var target_order = db.Orderes.Where(x => x.CustomerEmail==ordere.CustomerEmail&&x.CustomerName==ordere.CustomerName&&x.Phone==ordere.Phone).FirstOrDefault();
             List<Book> cart = HttpContext.Session.GetJson<List<Book>>("Book") ?? new List<Book>();
             foreach(var put_book in cart)
 			{

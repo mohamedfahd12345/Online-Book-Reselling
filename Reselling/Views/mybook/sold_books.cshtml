@@ -1,8 +1,6 @@
 ﻿@model List<Book>
-@{
-	var ans=0;
-}
 @if(Model.Count >0){
+
 	<table class="table">
                 <tr>
                         <th>Image</th>
@@ -12,11 +10,18 @@
                         <th>pages</th>
                         <th>category</th>
                         <th>Language</th>
+
                         <th>Year</th>
+                        <th>Order Status</th>
+
 
                 </tr>
                 @foreach (var item in Model)
                 {
+                   
+                        ResellingContext db = new ResellingContext();
+                       var target_order_details = db.OrderDetails.Where(x => x.BookId == item.Id).FirstOrDefault();
+                       var target_order = db.Orderes.Where(x => x.Id == target_order_details.OrderId).FirstOrDefault();
                    
                         <tr>
                                 <td><img src="@item.Photo"></img></td>
@@ -27,23 +32,16 @@
                                 <td>@item.Category</td>
                                 <td>@item.Language</td>
                                 <td>@item.Year</td>
-                                <td><a href="/cart/delete/@item.Id">Delete</a></td>
+                                <td><a href="/solddetails/index/@item.Id"> @target_order.Status </a></td>
                         </tr>
                 }
                 <tr>
                      
                 </tr>
-                <tr>
-                        <td class="text-right" colspan="4">
-                                <a class="btn btn-danger" href="/cart/clear">Clear Cart</a>
-                                <a class="btn btn-primary" href="/checkout/Index">Checkout</a>
-                        </td>
-                </tr>
+                
         </table>
-
 
 }
 else{
-	        <h3 class="display-4 text-center">Your cart is empty.</h3>
-
+     <h1>THERE IS NO BOOKS </h1>
 }

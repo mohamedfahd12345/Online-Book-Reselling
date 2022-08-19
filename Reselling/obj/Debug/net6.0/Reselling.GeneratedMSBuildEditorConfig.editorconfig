@@ -75,6 +75,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Online Book Reselling/Reselling/Reselling/Views/mybook/available_books.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlib29rXGF2YWlsYWJsZV9ib29rcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Online Book Reselling/Reselling/Reselling/Views/mybook/details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlib29rXGRldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -87,6 +91,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlib29rXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Online Book Reselling/Reselling/Reselling/Views/mybook/sold_books.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlib29rXHNvbGRfYm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Online Book Reselling/Reselling/Reselling/Views/myorders/details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlvcmRlcnNcZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Online Book Reselling/Reselling/Reselling/Views/myorders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcbXlvcmRlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Online Book Reselling/Reselling/Reselling/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -97,6 +113,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Online Book Reselling/Reselling/Reselling/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Online Book Reselling/Reselling/Reselling/Views/solddetails/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc29sZGRldGFpbHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Online Book Reselling/Reselling/Reselling/Views/_ViewImports.cshtml]

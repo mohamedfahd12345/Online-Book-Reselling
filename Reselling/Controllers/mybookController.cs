@@ -85,5 +85,24 @@ namespace Reselling.Controllers
             db.SaveChanges();
             return Redirect("/mybook/index");
         }
+        public IActionResult available_books()
+        {
+            checkuser();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);// will give the user's userId
+            var userName = User.FindFirstValue(ClaimTypes.Name); // will give the user
+            ResellingContext db = new ResellingContext();
+            var list_books = db.Books.Where(x => x.UserId == userId && x.Status == "available").ToList();
+            return View(list_books);
+
+        }
+        public IActionResult sold_books()
+        {
+            checkuser();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);// will give the user's userId
+            var userName = User.FindFirstValue(ClaimTypes.Name); // will give the user
+            ResellingContext db = new ResellingContext();
+            var list_books = db.Books.Where(x => x.UserId == userId && x.Status == "sold").ToList();
+            return View(list_books);
+        }
     }
 }
