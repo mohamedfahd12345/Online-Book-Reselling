@@ -1,0 +1,99 @@
+﻿@model Reselling.Models.Book
+
+@{
+    ViewData["Title"] = "sell";
+}
+
+<h1>sell</h1>
+
+<h4>Book</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="sell">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+           
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                 <select asp-for="Category" class="form-select" aria-label="Default select example">
+                 <option  value="Sport"></option>
+                <option value="Health">Health</option>
+                <option value="Wealth">Wealth</option>
+                <option  value="Programming">Programming</option>
+                <option  value="Sport">Sport</option>
+                <option  value="Classics">Classics</option>
+                <option  value="Self Help"> Self Help</option>
+                <option  value="Action and Adventure">Action and Adventure.</option>
+                <option  value="Literary Fiction">Literary Fiction.</option>
+                <option  value="Cookbooks"> Cookbooks</option>
+                <option  value="Biography and Autobiography"> Biography and Autobiography.</option>
+                <option  value="Comics">Comics.</option>
+                <option  value="Love">Love</option>
+                 <option  value="Habits">Habits</option>
+                </select>
+           
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Language" class="control-label"></label>
+                 <select asp-for="Language" class="form-select" aria-label="Default select example">
+                 <option  value="English">English</option>
+                 <option  value="Arabic">Arabic</option>
+                 <option  value="india">india</option>
+                 <option  value="German">German</option>
+                 <option  value="French">French</option>
+                 <option  value="Chinese">Chinese</option>
+
+                 </select>
+                <span asp-validation-for="Language" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pages" class="control-label"></label>
+                <input asp-for="Pages" class="form-control" />
+                <span asp-validation-for="Pages" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripition" class="control-label"></label>
+                <input asp-for="Descripition" class="form-control" />
+                <span asp-validation-for="Descripition" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photo" class="control-label"></label>
+                <input asp-for="Photo" class="form-control" />
+                <span asp-validation-for="Photo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,14 @@
+﻿@model List<Book>
+<div >
+	@foreach(var item in Model){
+		<h1>THIS BOOK IS SOLD</h1>
+		<h3>@item.Title</h3>
+		<div>
+			<img src="@item.Photo" />
+		</div>
+		<hr/>
+	}
+	<h2>
+		<a href="/allbook/index">Back to list</a>
+	</h2>
+</div>
