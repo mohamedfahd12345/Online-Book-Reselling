@@ -1,0 +1,29 @@
+﻿@model Ordere
+<table class="table">
+                <tr>
+                        <th>Adress</th>
+                        <th>Date</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>status</th>
+                        
+
+                </tr>
+                
+                   
+                        <tr>
+                                <td>@Model.Adress</td>
+                                <td>@Model.Date</td>
+                                <td>@Model.CustomerName</td>
+                                <td>@Model.CustomerEmail</td>
+                                <td>@Model.Phone</td>
+                                <td>
+                                    @Model.Status
+                                </td>
+                               <td>@Model.Id</td>
+                        </tr>
+                
+               
+               
+        </table>

@@ -272,3 +272,4 @@ F:\Online Book Reselling\Reselling\Reselling\bin\Debug\net6.0\Microsoft.OpenApi.
 F:\Online Book Reselling\Reselling\Reselling\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 F:\Online Book Reselling\Reselling\Reselling\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 F:\Online Book Reselling\Reselling\Reselling\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Online Book Reselling\Reselling\Reselling\obj\Debug\net6.0\scopedcss\Areas\admin\Views\Shared\_Layout.cshtml.rz.scp.css
