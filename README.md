@@ -6,22 +6,22 @@
 Modules:
 </h2>
 <p>
-  1.	User:
+  1.	User: <br>
 a.	Registration: User need to register first with their basic registration details and nee to create a valid login id and password.
   <br>
-b.	Login: Using valid login credentials, user need to login into the system in order to access the system.
-c.	View Books: Once user is logged into the, he/she may view all the added books with their details.
+b.	Login: Using valid login credentials, user need to login into the system in order to access the system. <br>
+c.	View Books: Once user is logged into the, he/she may view all the added books with their details.<br>
 d.	Buy Books: User can surf various book of their choice and buy them.
-e.	Add Books: System allows user to sell their books online buy added the book name and its details.
-f.	Upload Books: User need to upload a book if he/she wants to sell a book.
-g.	My Orders: All the purchase history of user will be displayed with details.
-h.	View Buyer: If any buyer is interested in buying a book or anyone buys a book from the user then buyer’s details will be displayed.
+e.	Add Books: System allows user to sell their books online buy added the book name and its details.<br>
+f.	Upload Books: User need to upload a book if he/she wants to sell a book.<br>
+g.	My Orders: All the purchase history of user will be displayed with details.<br>
+h.	View Buyer: If any buyer is interested in buying a book or anyone buys a book from the user then buyer’s details will be displayed.<br>
   
-2.	Admin:
-a.	View Books: Admin can view all the added books online with their details.
-b.	View Transaction: System allows admin to view all the transaction details of buying and selling a book.
-c.	View User: All the registered user details will be displayed to the admin
-
+2.	Admin:<br>
+a.	View Books: Admin can view all the added books online with their details.<br>
+b.	View Transaction: System allows admin to view all the transaction details of buying and selling a book.<br>
+c.	View User: All the registered user details will be displayed to the admin<br>
+<br>
 </p>
 <hr/>
 <h1>Technologies Used :</h1>
