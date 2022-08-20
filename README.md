@@ -8,6 +8,7 @@ Modules:
 <p>
   1.	User:
 a.	Registration: User need to register first with their basic registration details and nee to create a valid login id and password.
+  <br>
 b.	Login: Using valid login credentials, user need to login into the system in order to access the system.
 c.	View Books: Once user is logged into the, he/she may view all the added books with their details.
 d.	Buy Books: User can surf various book of their choice and buy them.
